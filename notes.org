@@ -1,0 +1,18 @@
+* Inbox
+** [2021-07-18 Sun 10:58] ShowdownEnumerator from the main ps-eval example calls evaluateShowdown
+What do we need for a poker game with this lib? just something to give equity?
+
+No.  we need something to tell us also if the person wins by a staight or a flush or a pair
+
+#+begin_src c++
+if (nboards > 0)
+    peval->evaluateShowdown(ehands, ehands[ndists], evals, results, weight);
+else
+    peval->evaluateShowdown(ehands, board, evals, results, weight);
+
+#+end_src
+
+[[file:~/gameDev/pokerstove/src/lib/pokerstove/penum/ShowdownEnumerator.cpp::if (nboards > 0)
+peval->evaluateShowdown(ehands, ehands\[ndists\], evals, results, weight);
+else
+peval->evaluateShowdown(ehands, board, evals, results, weight);]]
